@@ -14,8 +14,8 @@ Multiple
 
 ### Attributes
 
-- **uri:** (required) This is the uri where the media file resides.
-- **contentType:** (optional) This is a string that declares the mime-type of the file. It is useful if the transport mechanism is different than the file being delivered, as is the case with a torrents.
+- `uri` **(required)**: This is the uri where the media file resides.
+- `contentType` (optional): This is a string that declares the mime-type of the file. It is useful if the transport mechanism is different than the file being delivered, as is the case with a torrents.
 
 ### Examples
 
@@ -24,6 +24,6 @@ Multiple
     <podcast:source uri="https://example.com/file-720.mp4" />
     <podcast:source uri="ipfs://QmX33FYehk6ckGQ6g1D9D3FqZPix5JpKstKQKbaS8quUFb" />
     <podcast:source uri="https://example.com/file-720.torrent" contentType="application/x-bittorrent" />
-    <podcast:source uri="http://example.onion/file-720.mp4" />
+    <podcast:source uri="https://example.onion/file-720.mp4" />
 </podcast:alternateEnclosure>
 ```

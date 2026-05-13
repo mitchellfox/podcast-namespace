@@ -4,7 +4,7 @@
 
 This tag is used to link to a transcript or closed captions file. Multiple tags can be present for multiple transcript formats.
 
-Detailed file format information and example files are [here](../examples/transcripts/transcripts.md).
+Detailed file format information and example files are [here](https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/examples/transcripts/transcripts.md).
 
 ### Parent
 
@@ -16,10 +16,10 @@ Multiple
 
 ### Attributes
 
-- **url (required):** URL of the podcast transcript.
-- **type (required):** Mime type of the file such as `text/plain`, `text/html`, `text/vtt`, `application/json`, `application/x-subrip`
-- **language (optional):** The language of the linked transcript. If there is no language attribute given, the linked file is assumed to be the same language that is specified by the RSS `<language>` element.
-- **rel (optional):** If the rel="captions" attribute is present, the linked file is considered to be a closed captions file, regardless of what the mime type is. In that scenario, time codes are assumed to be present in the file in some capacity.
+- `url` **(required)**: URL of the podcast transcript.
+- `type` **(required)**: Mime type of the file such as `text/plain`, `text/html`, `text/vtt`, `application/json`, `application/x-subrip`
+- `language` (optional): The language of the linked transcript. If there is no language attribute given, the linked file is assumed to be the same language that is specified by the RSS `<language>` element.
+- `rel` (optional): If the `rel="captions"` attribute is present, the linked file is considered to be a closed captions file, regardless of what the mime type is. In that scenario, time codes are assumed to be present in the file in some capacity.
 
 ### Examples
 

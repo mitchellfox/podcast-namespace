@@ -26,15 +26,15 @@ A single [`<podcast:remoteItem>`](remote-item.md) element OR one or more [`<podc
 
 ### Attributes
 
-- `startTime` (required) - The time, in seconds, to stop using the currently active value recipient information and start using the value recipient information contained in this element.
-- `duration` (required) - How many seconds the playback app should use this element's value recipient information before switching back to the value recipient information of the parent feed.
-- `remoteStartTime` (optional) - The time in the remote item where the value split begins. Allows the timestamp to be set correctly in value metadata. If not defined, defaults to 0.
-- `remotePercentage` (optional) - The percentage of the payment the remote recipients will receive if a [`<podcast:remoteItem>`](remote-item.md) is present. If not defined, defaults to 100. If the value is less than 0, 0 is assumed. If the value is greater than 100, 100 is assumed.
+- `startTime` **(required)**: The time, in seconds, to stop using the currently active value recipient information and start using the value recipient information contained in this element.
+- `duration` **(required)**: How many seconds the playback app should use this element's value recipient information before switching back to the value recipient information of the parent feed.
+- `remoteStartTime` (optional): The time in the remote item where the value split begins. Allows the timestamp to be set correctly in value metadata. If not defined, defaults to 0.
+- `remotePercentage` (optional): The percentage of the payment the remote recipients will receive if a [`<podcast:remoteItem>`](remote-item.md) is present. If not defined, defaults to 100. If the value is less than 0, 0 is assumed. If the value is greater than 100, 100 is assumed.
 
 ### Example (Remote Item)
 
 ```xml
-<rss xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" version="2.0">
+<rss xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
    <channel>
       <title>Metal Showcase</title>
       <description>A great playlist of my favorite metal tracks.</description>
@@ -65,7 +65,7 @@ A single [`<podcast:remoteItem>`](remote-item.md) element OR one or more [`<podc
 ### Example (Locally Specified)
 
 ```xml
-<rss xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" version="2.0">
+<rss xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
    <channel>
       <title>Cool Pod</title>
       <description>This is a cool pod</description>
@@ -94,3 +94,6 @@ A single [`<podcast:remoteItem>`](remote-item.md) element OR one or more [`<podc
    </channel>
 </rss>
 ```
+
+(Humans: on the Podcast Index App list, this tag/feature is called [Wallet Switching (VTS)](https://podcastindex.org/apps?elements=Wallet+Switching+%28VTS%29).
+

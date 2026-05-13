@@ -27,23 +27,23 @@ protocols back into the hands of the open podcasting community.  A good overview
 
 ## Current Roadmap
 
-**Phase 1** - [Closed] Comment period closed on `11/15/2020` and [5 tags](#phase-1) were 
+**Phase 1** - [Closed] Comment period closed on `2020-11-15` and [5 tags](#phase-1) were 
 **formalized**.
 
-**Phase 2** - [Closed] Comment period closed on `1/31/2021` and [4 tags](#phase-2) were **formalized**.
+**Phase 2** - [Closed] Comment period closed on `2021-01-31` and [4 tags](#phase-2) were **formalized**.
 
-**Phase 3** - [Closed] Comment period closed on `6/1/2021` and [5 tags](#phase-3) were **formalized**.
+**Phase 3** - [Closed] Comment period closed on `2021-06-01` and [5 tags](#phase-3) were **formalized**.
 
-**Phase 4** - [Closed] Comment period closed on `12/1/2021` and [3 tags](#phase-4) were 
+**Phase 4** - [Closed] Comment period closed on `2021-12-01` and [3 tags](#phase-4) were 
 **formalized**.
 
-**Phase 5** - [Closed] Comment period closed on `7/15/2022` and [2 tags](#phase-5) were 
+**Phase 5** - [Closed] Comment period closed on `2022-07-15` and [2 tags](#phase-5) were 
 **formalized**.
 
-**Phase 6** - [Closed] Comment period closed on `6/1/2023` and [6 tags](#phase-6) were 
+**Phase 6** - [Closed] Comment period closed on `2023-06-01` and [6 tags](#phase-6) were 
 **formalized**. 
 
-**Phase 7** - [Closed] Comment period closed on `7/1/2024` and [2 tags](#phase-7) were **formalized**.
+**Phase 7** - [Closed] Comment period closed on `2024-07-01` and [2 tags](#phase-7) were **formalized**.
 
 **Phase 8** - [Open] Discussions are [open](https://github.com/Podcastindex-org/podcast-namespace/discussions/671) for new proposals and changes...
 
@@ -116,7 +116,7 @@ functionality of the tag.
 ### Goal #3 - Keep Exisiting Conventions
 
 Reinventing the wheel helps nobody.  When at all possible, existing conventions should be maintained.  For example, 
-it would make sense to turn **\<podcast:explicit>** into a unary element, where it's existence is taken as a "yes" 
+it would make sense to turn `<podcast:explicit>` into a unary element, where it's existence is taken as a "yes" 
 and it's absence as a "no".  But, that has never been the standard.  And, given as how this namespace will probably 
 sit alongside at least one other namespace, it makes sense to keep existing conventions in place.
 
@@ -144,115 +144,61 @@ to adoption, development and contribution.
 
 ## Element List
 
-### <u>Phase 1</u>
-
-<br>
-
 The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document 
 located [here](docs/1.0.md).  Please see that file for full implementation details.
 
-- **\<podcast:locked>** <br>
-- **\<podcast:transcript>** <br>
-- **\<podcast:funding>** <br>
-- **\<podcast:chapters>** <br>
-- **\<podcast:soundbite>** <br>
+### Phase 1
 
-<br>
+- `<podcast:locked>`
+- `<podcast:transcript>`
+- `<podcast:funding>`
+- `<podcast:chapters>`
+- `<podcast:soundbite>`
 
-### <u>Phase 2</u>
+### Phase 2
 
-<br>
+- `<podcast:person>`
+- `<podcast:location>`
+- `<podcast:season>`
+- `<podcast:episode>`
 
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document 
-located [here](docs/1.0.md).  Please see that file for full implementation details.
+### Phase 3
 
-- **\<podcast:person>** <br>
-- **\<podcast:location>** <br>
-- **\<podcast:season>** <br>
-- **\<podcast:episode>** <br>
+- `<podcast:trailer>`
+- `<podcast:license>`
+- `<podcast:alternateEnclosure>`
+  - `<podcast:source>`
+  - `<podcast:integrity>`
+- `<podcast:guid>`
 
-<br>
+### Phase 4
 
+- `<podcast:medium>`
+- `<podcast:images>` - DEPRECATED
+- `<podcast:liveItem>`
 
-### <u>Phase 3</u>
+### Phase 5
 
-<br>
+- `<podcast:socialInteract>`
+- `<podcast:block>`
 
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document 
-located [here](docs/1.0.md).  Please see that file for full implementation details.
+### Phase 6
 
-- **\<podcast:trailer>** <br>
-- **\<podcast:license>** <br>
-- **\<podcast:alternateEnclosure>** <br>
-  - **\<podcast:source>** <br>
-  - **\<podcast:integrity>** <br>
-- **\<podcast:guid>** <br>
+- `<podcast:txt>`
+- `<podcast:remoteItem>`
+- `<podcast:podroll>`
+- `<podcast:updateFrequency>`
+- `<podcast:podping>`
+- `<podcast:valueTimeSplit>`
 
-<br>
+### Phase 7
 
+- `<podcast:publisher>`
+- `<podcast:chat>`
 
-## <u>Phase 4</u>
+### Phase 8
 
-<br>
-
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document 
-located [here](docs/1.0.md).  Please see that file for full implementation details.
-
-- **\<podcast:medium>** <br>
-- **\<podcast:images>** <br>
-- **\<podcast:liveItem>** <br>
-
-<br>
-
-
-## <u>Phase 5</u>
-
-<br>
-
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document 
-located [here](docs/1.0.md).  Please see that file for full implementation details.
-
-- **\<podcast:socialInteract>** <br>
-- **\<podcast:block>** <br>
-
-<br>
-
-## <u>Phase 6</u>
-
-<br>
-
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document 
-located [here](docs/1.0.md).  Please see that file for full implementation details.
-
-- **\<podcast:txt>** <br>
-- **\<podcast:remoteItem>** <br>
-- **\<podcast:podroll>** <br>
-- **\<podcast:updateFrequency>** <br>
-- **\<podcast:podping>** <br>
-- **\<podcast:valueTimeSplit>** <br>
-
-<br>
-
-## <u>Phase 7</u>
-
-<br>
-
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document
-located [here](docs/1.0.md).  Please see that file for full implementation details.
-
-- **\<podcast:publisher>** <br>
-- **\<podcast:chat>** <br>
-
-<br>
-
-## <u>Phase 8</u>
-
-<br>
-
-The following tags have been formally adopted into the namespace.  They are fully documented in the XMLNS document
-located [here](docs/1.0.md).  Please see that file for full implementation details.
-
-- **\<podcast:image>** <br>
+- `<podcast:image>`
 
 <br>
 

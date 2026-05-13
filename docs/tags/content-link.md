@@ -20,20 +20,20 @@ The node value is a free-form string meant to explain to the user where this con
 
 ### Attributes
 
-- **href** (required) A string that is the uri pointing to content outside of the application.
+- `href` **(required)**: A string that is the uri pointing to content outside of the application.
 
 ### Examples
 
 (under `<item>`)
 
 ```xml
-<podcast:contentLink href="https://www.youtube.com/watch?v=8c7HWZROxD8">Watch this episode on YouTube!</podcast:contentLink>
+<podcast:contentLink href="https://www.youtube.com/watch?v=example">Watch this episode on YouTube!</podcast:contentLink>
 ```
 
 (under [`<podcast:liveItem>`](live-item.md))
 
 ```xml
-<podcast:contentLink href="https://youtube.com/blahblah/livestream">Live on YouTube!</podcast:contentLink>
+<podcast:contentLink href="https://youtube.com/example/livestream">Live on YouTube!</podcast:contentLink>
 ```
 
 ```xml

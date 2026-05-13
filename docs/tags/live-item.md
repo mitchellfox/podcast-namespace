@@ -30,9 +30,9 @@ The function of `<guid>` within a live item tag is the same as it is within a re
 
 ### Attributes
 
-- **status** (required) A string that must be one of `pending`, `live` or `ended`.
-- **start** (required) A string representing an ISO8601 timestamp that denotes the time when the stream is intended to start.
-- **end** (recommended) A string representing an ISO8601 timestamp that denotes the time when the stream is intended to end.
+- `status` **(required)**: A string that must be one of `pending`, `live` or `ended`.
+- `start` **(required)**: A string representing an ISO8601 timestamp that denotes the time when the stream is intended to start.
+- `end` (recommended): A string representing an ISO8601 timestamp that denotes the time when the stream is intended to end.
 
 The `start` and `end` attributes denote when the live stream "should" start and end. But, real life dictates that those times might not be adhered to. Apps are therefore encouraged not to rely solely on those times as anything more than an approximation. The canonical way to know if a stream has started is with the `status` attribute. If `status` is "live" then the stream has started.
 
@@ -47,11 +47,6 @@ A complete example:
     <link>https://example.com/podcast/live</link>
     <guid isPermaLink="true">https://example.com/live</guid>
     <author>John Doe (john@example.com)</author>
-    <podcast:images srcset="https://example.com/images/live/pci_avatar-massive.jpg 1500w,
-        https://example.com/images/live/pci_avatar-middle.jpg 600w,
-        https://example.com/images/live/pci_avatar-small.jpg 300w,
-        https://example.com/images/live/pci_avatar-tiny.jpg 150w"
-    />
     <podcast:person href="https://www.podchaser.com/creators/adam-curry-107ZzmWE5f"
                     img="https://example.com/images/adamcurry.jpg">Adam Curry</podcast:person>
     <podcast:person role="guest" href="https://github.com/daveajones/"
@@ -62,8 +57,8 @@ A complete example:
         <podcast:source uri="https://example.com/pc20/livestream" />
     </podcast:alternateEnclosure>
     <enclosure url="https://example.com/pc20/livestream?format=.mp3" type="audio/mpeg" length="312" />
-    <podcast:contentLink href="https://youtube.com/pc20/livestream">YouTube!</podcast:contentLink>
-    <podcast:contentLink href="https://twitch.com/pc20/livestream">Twitch!</podcast:contentLink>
+    <podcast:contentLink href="https://www.youtube.com/pc20/livestream">YouTube!</podcast:contentLink>
+    <podcast:contentLink href="https://www.twitch.tv/pc20/livestream">Twitch!</podcast:contentLink>
     <podcast:contentLink href="https://example.com/html/livestream">Listen Live!</podcast:contentLink>
 </podcast:liveItem>
 ```

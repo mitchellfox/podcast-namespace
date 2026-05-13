@@ -36,10 +36,10 @@ This is the full name or alias of the person. This value cannot be blank. Please
 
 ### Attributes
 
-- **role:** (optional) Used to identify what role the person serves on the show or episode. This should be a reference to an official role within the Podcast Taxonomy Project list (see below). If `role` is missing then "host" is assumed.
-- **group:** (optional) This should be a reference to an official group within the Podcast Taxonomy Project list. If `group` is not present, then "cast" is assumed.
-- **img:** (optional) This is the url of a picture or avatar of the person.
-- **href:** (optional) The url to a relevant resource of information about the person, such as a homepage or third-party profile platform. Please see the [example feed](https://github.com/Podcastindex-org/podcast-namespace/blob/main/example.xml) for possible choices of what to use here.
+- `role` (optional): Used to identify what role the person serves on the show or episode. This should be a reference to an official role within the Podcast Taxonomy Project list (see below). If `role` is missing then "host" is assumed.
+- `group` (optional): This should be a reference to an official group within the Podcast Taxonomy Project list. If `group` is not present, then "cast" is assumed.
+- `img` (optional): This is the url of a picture or avatar of the person.
+- `href` (optional): The url to a relevant resource of information about the person, such as a homepage or third-party profile platform. Please see the [example feed](https://github.com/Podcastindex-org/podcast-namespace/blob/main/example.xml) for possible choices of what to use here.
 
 The `role` and `group` attributes are case-insensitive. So, "Host" is the same as "host", and "Cover Art Designer" is the same as "cover art designer".
 
@@ -50,7 +50,7 @@ The full taxonomy list is [here](https://github.com/Podcastindex-org/podcast-nam
 ```xml
 <podcast:person
         href="https://example.com/johnsmith/blog"
-        img="http://example.com/images/johnsmith.jpg"
+        img="https://example.com/images/johnsmith.jpg"
 >John Smith</podcast:person>
 ```
 
@@ -58,15 +58,15 @@ The full taxonomy list is [here](https://github.com/Podcastindex-org/podcast-nam
 <podcast:person
         role="guest"
         href="https://www.imdb.com/name/nm0427852888/"
-        img="http://example.com/images/janedoe.jpg"
+        img="https://example.com/images/janedoe.jpg"
 >Jane Doe</podcast:person>
 ```
 
 ```xml
 <podcast:person
         role="guest"
-        href="https://www.wikipedia/alicebrown"
-        img="http://example.com/images/alicebrown.jpg"
+        href="https://example.wikipedia/alicebrown"
+        img="https://example.com/images/alicebrown.jpg"
 >Alice Brown</podcast:person>
 ```
 
@@ -74,8 +74,8 @@ The full taxonomy list is [here](https://github.com/Podcastindex-org/podcast-nam
 <podcast:person
         group="writing"
         role="guest"
-        href="https://www.wikipedia/alicebrown"
-        img="http://example.com/images/alicebrown.jpg"
+        href="https://example.wikipedia/alicebrown"
+        img="https://example.com/images/alicebrown.jpg"
 >Alice Brown</podcast:person>
 ```
 
